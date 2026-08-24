@@ -26,7 +26,7 @@ const Stairs = (props) => {
         tl.to('.stair', {
             y: '100%',
             stagger: {
-                amount: -0.25,
+                amount: -0.5,
             }
         })
         tl.to(stairParentRef.current, {
@@ -38,26 +38,26 @@ const Stairs = (props) => {
 
         gsap.from(pageRef.current,{
             opacity : 0,
-            delay: 0.9,
+            delay: 0.6,
             scale:1
             // current problem is that the animation isnt working everytime the path changes.
         })
-    },[currentPath])
+    },{ scope: stairParentRef, dependencies: [currentPath] })
 
 
     return (
 
         <div>
             <div ref={stairParentRef} className='h-screen w-full fixed z-10 top-0'>
-                <div className='h-full w-full flex '>
-                    <div className='stair h-full w-1/5 bg-black' ></div>
-                    <div className='stair h-full w-1/5 bg-black' ></div>
-                    <div className='stair h-full w-1/5 bg-black' ></div>
-                    <div className='stair h-full w-1/5 bg-black' ></div>
-                    <div className='stair h-full w-1/5 bg-black' ></div>
-                    <div className='stair h-full w-1/5 bg-black' ></div>
+                    <div className='h-full w-full flex '>
+                        <div className='stair h-full w-1/5 bg-black' ></div>
+                        <div className='stair h-full w-1/5 bg-black' ></div>
+                        <div className='stair h-full w-1/5 bg-black' ></div>
+                        <div className='stair h-full w-1/5 bg-black' ></div>
+                        <div className='stair h-full w-1/5 bg-black' ></div>
+                        <div className='stair h-full w-1/5 bg-black' ></div>
 
-                </div>
+                    </div>
             </div>
             <div ref={pageRef}>
 

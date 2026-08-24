@@ -1,51 +1,56 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const Agence = () => {
 
-
   const imgDivRef = useRef(null)
-
   const imageRef = useRef(null)
 
   const imageArray = [
-    'public/img arr/N.png',
-    'public/img arr/E.png',
-    'public/img arr/z.png',
-    'public/img arr/a.png',
-    'public/img arr/a.png',
-    'public/img arr/L.png'
-
+    '/img%20arr/image.png',
+    '/img%20arr/image2.png',
+    '/img%20arr/image3.png',
+    '/img%20arr/image4.png',
+    '/img%20arr/image5.png',
+    '/img%20arr/image6.png',
+    '/img%20arr/image7.png',
+    '/img%20arr/image8.png'
   ]
 
-  useGSAP(function(){
-     gsap.to(imgDivRef.current,{
-      scrollTrigger:{
+  useGSAP(function () {
+    gsap.to(imgDivRef.current, {
+      scrollTrigger: {
         trigger: imgDivRef.current,
         markers: true,
-        start:'top 16%',
+        start: 'top 15%',
         end: 'top -70%',
         pin: true,
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: 'transform',
+        scrub: 3,
+        anticipatePin: 1,
+        invalidateOnRefresh: true ,
 
-        onUpdate:(elem) => {
+        onUpdate: (elem) => {
           let imageIndex;
 
-          if(elem.progress < 1){
+          if (elem.progress < 1) {
             imageIndex = Math.floor(elem.progress * imageArray.length);
-          }else{
-            imageIndex = imageArray.length-1;
+          } else {
+            imageIndex = imageArray.length - 1;
           }
-          
+
           // abhi yahan dikkt hai...last image nahi dikh nhi rahi hai at the end.
           imageRef.current.src = imageArray[imageIndex]
         }
-        
+
       }
-     })
+    })
   })
 
   return (
@@ -53,7 +58,7 @@ const Agence = () => {
       <div className='secion1 py-1'>
         <div ref={imgDivRef} className='absolute overflow-hidden h-[20vw] rounded-3xl w-[15vw] top-0 left-[30vw]'>
 
-          <img ref={imageRef} className='h-full w-full object-cover' src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7" alt="" />
+          <img ref={imageRef} className='h-full w-full object-cover' src="/img%20arr/image.png" alt="" />
         </div>
 
         <div className='relative font-[font2] '>
@@ -81,7 +86,7 @@ const Agence = () => {
       </div>
 
       <div className="section2 h-screen">
-
+        
       </div>
     </div>
   )
