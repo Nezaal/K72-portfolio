@@ -25,7 +25,6 @@ const Agence = () => {
     gsap.to(imgDivRef.current, {
       scrollTrigger: {
         trigger: imgDivRef.current,
-        markers: true,
         start: 'top 15%',
         end: 'top -70%',
         pin: true,
@@ -56,14 +55,13 @@ const Agence = () => {
   return (
     <div>
       <div className='secion1 py-1'>
-        <div ref={imgDivRef} className='absolute overflow-hidden h-[20vw] rounded-3xl w-[15vw] top-0 left-[30vw]'>
-
+        <div ref={imgDivRef} className='absolute overflow-hidden lg:h-[20vw] h-[40vw] lg:w-[15vw] w-[30vw] lg:rounded-3xl rounded-2xl top-0 left-[30vw]'>
           <img ref={imageRef} className='h-full w-full object-cover' src="/img%20arr/image.png" alt="" />
         </div>
 
-        <div className='relative font-[font2] '>
+        <div className='relative font-[font2]'>
 
-          <div className='mt-[55vh]'>
+          <div className='lg:mt-[55vh] mt-[28vh]'>
 
             <h1 className="text-[19vw]  text-center uppercase leading-[15vw]">
               Soixan7e <br />
@@ -73,9 +71,9 @@ const Agence = () => {
           </div>
 
           <div
-            className='pl-[40%] mt-20'>
+            className='lg:pl-[40%] px-3 mt-20'>
             <p
-              className='text-3xl'
+              className='lg:text-3xl '
             > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               Notre curiosité nourrit notre créativité. On reste humbles et on dit non aux gros egos, même le vôtre. Une marque est vivante. Elle a des valeurs, une personnalité, une histoire. Si on oublie ça, on peut faire de bons chiffres à court terme, mais on la tue à long terme. C’est pour ça qu’on s’engage à donner de la perspective, pour bâtir des marques influentes.
             </p>

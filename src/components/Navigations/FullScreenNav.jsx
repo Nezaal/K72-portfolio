@@ -69,110 +69,110 @@ const FullScreenNav = () => {
           </div>
           <div onClick={() => {
             setNavOpen(false)
-          }} className='h-32 w-32 relative cursor-pointer z-50'>
-            <div className='h-44 w-[2px] origin-top  rotate-45 bg-[#D3FD50] absolute right-0'></div>
-            <div className='h-44 w-[2px] origin-top -rotate-45 bg-[#D3FD50] absolute'></div>
+          }} className='h-32 w-32 relative cursor-pointer'>
+            <div className='lg:h-44 lg:w-[2px] h-32 w-[2px]  origin-top -rotate-45 bg-[#D3FD50] absolute left-9'></div>
+            <div className='lg:h-44 lg:w-[2px] h-32 w-[2px] origin-top  rotate-45 bg-[#D3FD50] absolute right-0'></div>
 
           </div>
         </div>
 
-        <div className='pt-3'>
-          <div className=' link origin-top relative border-t-1 border-white justify-center'>
+        <div className='lg:pt-3 mt-[11vh]'>
+          <div className='link origin-top relative border-t-[1px] border-white justify-center'>
             <h1
-              className=' font-[font2] text-[8vw] leading-[0.8] text-center  pt-3 uppercase'
+              className=' font-[font2] lg:text-[8vw] text-[7vh] lg:leading-[0.8] text-center  lg:pt-10 pb-1 uppercase'
             > Projects </h1>
-            <div className='moveLink absolute flex top-0 text-black bg-[#D3FD50] '>
-              <div className='moveX flex items-center'>
+            <div className='moveLink absolute flex top-0 text-black bg-[#D3FD50]'>
+              <div className='moveX flex items-center '>
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase '>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
 
               </div>
               <div className='moveX flex items-center'>
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
 
               </div>
             </div>
           </div>
-          <div className=' link origin-top relative  border-t-1 border-white justify-center'>
+          <div className='link origin-top relative border-t-[1px] border-white justify-center'>
             <h1
-              className=' font-[font2] text-[8vw] leading-[0.8] text-center  pt-3 uppercase'
-            > Projects </h1>
-            <div className='moveLink absolute flex top-0 text-white bg-[#D3FD50] '>
-              <div className='moveX flex items-center'>
+              className=' font-[font2] lg:text-[8vw] text-[7vh] lg:leading-[0.8] text-center  lg:pt-10 pt-1 uppercase'
+            > Agence </h1>
+            <div className='moveLink absolute flex top-0 text-black bg-[#D3FD50]'>
+              <div className='moveX flex items-center '>
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase '>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
 
               </div>
               <div className='moveX flex items-center'>
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
 
               </div>
             </div>
           </div>
-          <div className=' link origin-top relative  text-white border-t-1 border-white justify-center'>
+          <div className='link origin-top relative border-t-[1px] border-white justify-center'>
             <h1
-              className=' font-[font2] text-[8vw] leading-[0.8] text-center  pt-3 uppercase'
-            > Projects </h1>
-            <div className='moveLink absolute flex top-0 text-black bg-[#D3FD50] '>
-              <div className='moveX flex items-center'>
+              className=' font-[font2] lg:text-[8vw] text-[7vh] lg:leading-[0.8] text-center  lg:pt-10 pt-1 uppercase'
+            > Contact </h1>
+            <div className='moveLink absolute flex top-0 text-black bg-[#D3FD50]'>
+              <div className='moveX flex items-center '>
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase '>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
 
               </div>
               <div className='moveX flex items-center'>
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
 
               </div>
             </div>
           </div>
-          <div className=' link origin-top relative  text-white border-y-1 border-white justify-center'>
+          <div className='link origin-top relative border-t-[1px] border-b-[1px] border-white justify-center'>
             <h1
-              className=' font-[font2] text-[8vw] leading-[0.8] text-center  pt-3 uppercase'
-            > Projects </h1>
-            <div className='moveLink absolute flex top-0 text-black bg-[#D3FD50] '>
-              <div className='moveX flex items-center'>
+              className=' font-[font2] lg:text-[8vw] text-[7vh] lg:leading-[0.8] text-center  lg:pt-10 pt-1 uppercase'
+            > blogue </h1>
+            <div className='moveLink absolute flex top-0 text-black bg-[#D3FD50]'>
+              <div className='moveX flex items-center '>
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase '>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
 
               </div>
               <div className='moveX flex items-center'>
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image2.png" alt="" />
 
-                <h2 className='whitespace-nowrap font-[font2] text-[8vw] leading-[0.8] pt-3 text-center uppercase'>Pour tout voir</h2>
-                <img className='h-25 w-80 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
+                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-[5vh] lg:leading-[0.8] lg:pt-3 pt-3 text-center uppercase'>Pour tout voir</h2>
+                <img className='lg:h-25 h-20 lg:w-80 w-60 shrink-0 rounded-full  ' src="public\fullscreen-images\image3.png" alt="" />
 
               </div>
             </div>

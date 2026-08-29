@@ -1,40 +1,57 @@
-import React from 'react'
-import ProjectCard from "../components/projects/ProjectCard"
-
-
+import { useGSAP } from '@gsap/react'
+import ProjectCard from '../components/projects/ProjectCard'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
 
 
 const Projects = () => {
-  
+
   const projects = [{
-    image1: '../project-images/image copy 1.png',
-    image2: '../project-images/image copy 2.png',
+    image1: 'https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_1280x960-1280x960.jpg',
+    image2: 'https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---Thumbnail-1280x960.jpg'
   }, {
-  
-    image1: '../project-images/image copy 3.png',
-    image2: '../project-images/image copy 4.png',
+    image1: 'https://k72.ca/uploads/caseStudies/OKA/OKA_thumbnail-1280x960.jpg',
+    image2: 'https://k72.ca/uploads/caseStudies/Opto/thumbnailimage_opto-1280x960.jpg'
   }, {
-  
-    image1: '../project-images/image copy 5.png',
-    image2: '../project-images/image copy 6.png',
-  }, {
-    image1: '../project-images/image copy 7.png',
-    image2: '../project-images/image copy 8.png',
-  }, {
-    image1: '../project-images/image copy 9.png',
-    image2: '../project-images/image copy 10.png',
+    image1: 'https://k72.ca/uploads/caseStudies/LAMAJEURE_-_Son_sur_mesure/chalaxeur-thumbnail_img-1280x960.jpg',
+    image2: 'https://k72.ca/uploads/caseStudies/SHELTON/thumbnailimage_shelton-1280x960.jpg'
   }]
 
-  return (
-    <div className='p-3'>
-      <div className=' pt-[40vh]' >
-        <h2 className='font-[font2] text-[11vw] uppercase font-bold text-black'>Projects</h2>
-      </div>
+  gsap.registerPlugin(ScrollTrigger)
 
-      <div className='-mt-15'>
-        {projects.map(function (elem) {
-          return <ProjectCard  image1 = {elem.image1} image2 = {elem.image2}/>
+
+  useGSAP(function () {
+  
+
+    const heroes = gsap.utils.toArray('.hero')
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.lol',
+        start: 'top 70%',
+        end: 'top -80%',
+        scrub: 1.5
+      }
+    })
+    heroes.forEach(function (hero, i) {
+      tl.from(hero, {
+        height: i === 0 ? '25vh' : '5vh',
+        ease: 'power2.inOut'
+      })
+    })
+  })
+
+  return (
+    <div className='lg:p-4 p-2 mb-[30vh]'>
+      <div className=' pt-[45vh]'>
+        <h2 className='font-[font2] lg:text-[9.5vw] text-7xl uppercase'>Projets</h2>
+      </div>
+      <div className='-lg:mt-20 lol'>
+        {projects.map(function (elem, idx) {
+          return <div key={idx} className='hero w-full lg:h-[60vh] mb-4 flex lg:flex-row flex-col lg:gap-4 gap-2'>
+            <ProjectCard image1={elem.image1} image2={elem.image2} />
+          </div>
         })}
+
       </div>
     </div>
   )
