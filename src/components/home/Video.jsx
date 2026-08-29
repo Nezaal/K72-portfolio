@@ -6,7 +6,7 @@ const Video = () => {
     <div className='h-full w-full rounded-[inherit] overflow-hidden'>
         <video autoPlay muted loop
         className='h-full w-full object-cover'
-        src="public\video\vdo.mp4"></video>
+        src="../video/vdo.mp4"></video>
     </div>
   )
 }

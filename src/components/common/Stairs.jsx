@@ -11,38 +11,36 @@ const Stairs = (props) => {
     const stairParentRef = useRef(null)
     const pageRef = useRef(null)
     
-    useGSAP(function () {
+ useGSAP(function () {
         const tl = gsap.timeline()
-
         tl.to(stairParentRef.current, {
             display: 'block',
         })
-        tl.from(".stair", {
+        tl.from('.stair', {
             height: 0,
             stagger: {
-                amount: -0.2,
+                amount: -0.2
             }
         })
         tl.to('.stair', {
             y: '100%',
             stagger: {
-                amount: -0.5,
+                amount: -0.25
             }
         })
         tl.to(stairParentRef.current, {
-            display: 'none',
+            display: 'none'
         })
         tl.to('.stair', {
-            y: '100%'
+            y: '0%',
         })
 
         gsap.from(pageRef.current,{
-            opacity : 0,
-            delay: 0.6,
-            scale:1
-            // current problem is that the animation isnt working everytime the path changes.
+            opacity:0,
+            delay:1.3,
+            scale:1.2
         })
-    },{ scope: stairParentRef, dependencies: [currentPath] })
+    }, [currentPath])
 
 
     return (
